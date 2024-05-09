@@ -6,18 +6,22 @@ import java.util.Set;
 
 public class Dictionary {
     
-      static private Map<String, Set<String>> mapa = new HashMap<>();
+      static private Map<String, Set<String>> dictionary = new HashMap<>();
 
       public static Map<String, Set<String>> getMapa() {
-            return Dictionary.mapa;
+            return Dictionary.dictionary;
       }
 
       public static void setMapa(Map<String, Set<String>> mapa) {
-            Dictionary.mapa = mapa;
+            Dictionary.dictionary = mapa;
+      }
+
+      public static void addSet(String initial, Set<String> setWords) {
+            dictionary.put(initial, setWords);
       }
 
       @Override
       public String toString() {
-            return "Dictionary [mapa=" + mapa + "]";
+            return "Dictionary [mapa=" + Dictionary.dictionary + "]";
       }
 }
