@@ -6,14 +6,14 @@ import java.util.Set;
 
 public class Dictionary {
     
-      private Map<String, Set<String>> mapa = new HashMap<>();
+      static private Map<String, Set<String>> mapa = new HashMap<>();
 
-      public Map<String, Set<String>> getMapa() {
-            return this.mapa;
+      public static Map<String, Set<String>> getMapa() {
+            return Dictionary.mapa;
       }
 
-      public void setMapa(Map<String, Set<String>> mapa) {
-            this.mapa = mapa;
+      public static void setMapa(Map<String, Set<String>> mapa) {
+            Dictionary.mapa = mapa;
       }
 
       @Override
