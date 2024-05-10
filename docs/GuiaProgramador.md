@@ -15,7 +15,7 @@ Esta sera una clase de utilidad que contendra dentro de si misma un metodo estat
 
 ## Clase DictionaryClass
 Aqui se guardaran todos los metodos que interactuaran con el menu y el usuario. tambien tendra un atributo que sera un Map quien recibira una clave tipo String y un valor Tipo Set, de esta manera filtrara la llave por una letra y su valor seran las palabras almacenadas que inicien por esta misma clave.
-![alt text](/docs/images/atributeDic.png.png)
+![alt text](/docs/images/atributeDic.png)
 
 ### Metodo addWord
 
@@ -66,5 +66,7 @@ El caso 2 y 3 es exactamente lo mismo con try catch y llamada a los metodos. Nue
 ![alt text](/docs/images/appLast.png)
 
 El caso 5 nuevamente usara un try catch para evitar nulos y fuera del limite de String llamando el metodo respectivo en su try, mientras que el 6 volvera la variable false y asi termianara la ejecucion del codigo.
+
+[volver](/README.md)
 
 ## Gracias por interesarse en nuestro programa.
