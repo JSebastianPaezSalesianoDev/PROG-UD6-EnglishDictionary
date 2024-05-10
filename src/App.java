@@ -72,6 +72,7 @@ public class App {
                 case "6":
                     JOptionPane.showMessageDialog(null, "Saliendo del programa");
                     goingOn = false;
+                    break;
                 default:
                     JOptionPane.showMessageDialog(null, "Opcion No Valida");
                     break;
