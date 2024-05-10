@@ -40,9 +40,19 @@ public class App {
                     break;
                 case "3":
                     try {
-                        dictionary.wordChecker(optionUser);
+                        if (dictionary.wordChecker(optionUser) == true) {
+
+                            JOptionPane.showMessageDialog(null, "Palabra en el diccioanrio");
+                        }
+                        else{
+                            JOptionPane.showMessageDialog(null, "Palabra inexistente");
+
+                        }
                     } catch (NullPointerException e) {
                         String alertMessage = "Error: Palabra no encontrda";
+                        JOptionPane.showMessageDialog(null, alertMessage);
+                    } catch (StringIndexOutOfBoundsException e) {
+                        String alertMessage = "Error: Debe ingresar algo";
                         JOptionPane.showMessageDialog(null, alertMessage);
                     }
 
