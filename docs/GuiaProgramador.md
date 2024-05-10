@@ -15,6 +15,7 @@ Esta sera una clase de utilidad que contendra dentro de si misma un metodo estat
 
 ## Clase DictionaryClass
 Aqui se guardaran todos los metodos que interactuaran con el menu y el usuario. tambien tendra un atributo que sera un Map quien recibira una clave tipo String y un valor Tipo Set, de esta manera filtrara la llave por una letra y su valor seran las palabras almacenadas que inicien por esta misma clave.
+
 ![alt text](/docs/images/atributeDic.png)
 
 ### Metodo addWord
