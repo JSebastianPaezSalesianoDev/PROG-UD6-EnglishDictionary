@@ -49,13 +49,17 @@ public class App {
 
                         }
                     } catch (NullPointerException e) {
-                        String alertMessage = "Error: Palabra no encontrda";
+                        String alertMessage = "Error: Palabra no encontrada";
                         JOptionPane.showMessageDialog(null, alertMessage);
                     } catch (StringIndexOutOfBoundsException e) {
                         String alertMessage = "Error: Debe ingresar algo";
                         JOptionPane.showMessageDialog(null, alertMessage);
                     }
 
+                    break;
+                
+                case "4":
+                    dictionary.showEachValueAndKey(optionUser);
                     break;
 
                 default:

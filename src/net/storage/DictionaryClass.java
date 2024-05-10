@@ -32,12 +32,12 @@ public class DictionaryClass {
             word = word.trim().toLowerCase();
             String firstLetter = word.substring(0, 1);
             if (!dictionary.containsKey(firstLetter)) {
-
+                  JOptionPane.showMessageDialog(null, "Palabra ingresada con exito");
                   dictionary.put(firstLetter, new HashSet<>());
             } else {
 
                   dictionary.get(firstLetter).add(word);
-                  JOptionPane.showInputDialog(null, "Palabra ingresada con exito");
+                  JOptionPane.showMessageDialog(null, "Palabra ingresada con exito");
             }
 
       }
