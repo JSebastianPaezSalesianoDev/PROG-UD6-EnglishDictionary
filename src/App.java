@@ -62,7 +62,13 @@ public class App {
 
                     break;
                 case "5":
-                    dictionary.showWordsForKey(optionUser);
+                    try {
+                        dictionary.showWordsForKey(optionUser);
+
+                    } catch (StringIndexOutOfBoundsException e) {
+                        String alertMessage = "Error: Debe ingresar algo";
+                        JOptionPane.showMessageDialog(null, alertMessage);
+                    }
                     break;
                 default:
                     JOptionPane.showMessageDialog(null, "Opcion No Valida");
