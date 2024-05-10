@@ -58,9 +58,6 @@ public class Dictionary {
             String firstLetter = word.substring(0, 1);
 
             Set<String> wordsFirstLetter = dictionary.get(firstLetter);
-            if (wordsFirstLetter.contains(word) && wordsFirstLetter != null) {
-                  
-            }
 
             return wordsFirstLetter.contains(word) && wordsFirstLetter != null;
       }
