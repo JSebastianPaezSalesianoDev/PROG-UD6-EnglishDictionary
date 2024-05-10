@@ -59,7 +59,7 @@ public class App {
                     break;
                 
                 case "4":
-                    dictionary.showEachValueAndKey(optionUser);
+                    dictionary.valuesKeys();
                     break;
 
                 default:

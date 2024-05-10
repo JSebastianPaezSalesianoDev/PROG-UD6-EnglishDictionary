@@ -68,8 +68,8 @@ public class DictionaryClass {
             return wordsFirstLetter.contains(word) && wordsFirstLetter != null;
       }
 
-      public Set<String> valuesKeys() {
-            return dictionary.keySet();
+      public void valuesKeys() {
+            JOptionPane.showMessageDialog(null, dictionary.keySet());
       }
 
       public void showEachValueAndKey(String firstLetter) {
