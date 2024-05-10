@@ -2,7 +2,7 @@ package net.duolingoinc.utility;
 
 public class Menu {
     
-    public static String Showmenu(){
+    public static String showMenu(){
 
         String menu = "******************************************************\n";
         menu += "1. Añadir palabra\n2. eliminar palabra\n3. Existe palabra\n";
