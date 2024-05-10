@@ -23,9 +23,6 @@ public class DictionaryClass {
             this.dictionary = mapa;
       }
 
-      public void addSet(String initial, Set<String> setWords) {
-            dictionary.put(initial, setWords);
-      }
 
       public void addWord(String word) {
             word = JOptionPane.showInputDialog(null, "Ingrese la palabra que desea agregar al diccionario");
