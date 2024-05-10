@@ -43,8 +43,7 @@ public class App {
                         if (dictionary.wordChecker(optionUser) == true) {
 
                             JOptionPane.showMessageDialog(null, "Palabra en el diccioanrio");
-                        }
-                        else{
+                        } else {
                             JOptionPane.showMessageDialog(null, "Palabra inexistente");
 
                         }
@@ -57,11 +56,14 @@ public class App {
                     }
 
                     break;
-                
+
                 case "4":
                     dictionary.valuesKeys();
-                    break;
 
+                    break;
+                case "5":
+                    dictionary.showWordsForKey(optionUser);
+                    break;
                 default:
                     JOptionPane.showMessageDialog(null, "Opcion No Valida");
                     break;

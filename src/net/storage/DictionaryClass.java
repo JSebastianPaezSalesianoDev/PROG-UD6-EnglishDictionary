@@ -34,6 +34,7 @@ public class DictionaryClass {
             if (!dictionary.containsKey(firstLetter)) {
                   JOptionPane.showMessageDialog(null, "Palabra ingresada con exito");
                   dictionary.put(firstLetter, new HashSet<>());
+                  dictionary.get(firstLetter).add(word);
             } else {
 
                   dictionary.get(firstLetter).add(word);
@@ -63,7 +64,6 @@ public class DictionaryClass {
             String firstLetter = word.substring(0, 1);
 
             Set<String> wordsFirstLetter = dictionary.get(firstLetter);
-          
 
             return wordsFirstLetter.contains(word) && wordsFirstLetter != null;
       }
@@ -72,17 +72,22 @@ public class DictionaryClass {
             JOptionPane.showMessageDialog(null, dictionary.keySet());
       }
 
-      public void showEachValueAndKey(String firstLetter) {
+      public void showWordsForKey(String word) {
 
-            firstLetter = firstLetter.trim().toLowerCase();
+            word = JOptionPane.showInputDialog(null,
+                        "Ingrese la palabra inicial del grupo de palabras que desea ver con esa inicial");
+            word = word.trim().toLowerCase();
+            String firstLetter = word.substring(0, 1);
             Set<String> wordsFirstLetter = dictionary.get(firstLetter);
             if (wordsFirstLetter != null) {
-                  JOptionPane.showMessageDialog(null, "Palabras que empiezan por " + firstLetter + "Son: \n");
-                  for (String word : wordsFirstLetter) {
-                        JOptionPane.showMessageDialog(null, "-" + word + "\n");
+                  StringBuilder message = new StringBuilder("Palabras que empiezan por ").append(firstLetter)
+                              .append(" son:\n");
+                  for (String wordie : wordsFirstLetter) {
+                        message.append("- ").append(wordie).append("\n");
                   }
+                  JOptionPane.showMessageDialog(null, message.toString());
             } else {
-                  JOptionPane.showMessageDialog(null, "No hay palabras que empiecen con '" + firstLetter);
+                  JOptionPane.showMessageDialog(null, "No hay palabras que empiecen con '" + firstLetter + "'");
             }
       }
 
