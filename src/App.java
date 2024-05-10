@@ -1,4 +1,3 @@
-import java.util.Dictionary;
 
 import javax.swing.JOptionPane;
 
@@ -70,6 +69,9 @@ public class App {
                         JOptionPane.showMessageDialog(null, alertMessage);
                     }
                     break;
+                case "6":
+                    JOptionPane.showMessageDialog(null, "Saliendo del programa");
+                    goingOn = false;
                 default:
                     JOptionPane.showMessageDialog(null, "Opcion No Valida");
                     break;
